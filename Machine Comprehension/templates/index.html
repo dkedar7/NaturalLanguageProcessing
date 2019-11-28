@@ -1,0 +1,172 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Kedar - Data Scientist</title>
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Magnific -->
+        <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <!-- Icon -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/pe-icon-7-stroke.css" rel="stylesheet" type="text/css" />          
+        <!-- SLICK SLIDER -->
+        <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
+        <link rel="stylesheet" href="css/owl.theme.css"/> 
+        <link rel="stylesheet" href="css/owl.transitions.css"/>    
+        <!-- Custom Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+
+    </head>
+</head>
+
+
+<div style="max-width: 600px; margin-left: auto; margin-right: auto;">
+<body>
+    <!-- Loader Start -->
+    <!-- <div id="preloader">
+            <div id="status">
+                <div class="spinner">
+                    <div class="dot1"></div>
+                    <div class="dot2"></div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Loader End -->
+
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="mdi mdi-menu"></span>
+                    </button><!--end button-->
+    
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mx-auto mt-sm-0 social-icon light-social-icon">
+                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/dkedar7" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
+                                <li class="list-inline-item"><a href="https://www.twitter.com/dkedar7" target="_blank"><i class="mdi mdi-twitter"></i></a></li>
+                                <li class="list-inline-item"><a href="https://medium.com/@kedardabhadkar" target="_blank"><i class="mdi mdi-medium"></i></a></li>
+                            </ul>
+                        </div> 
+                    </div><!--end container-->
+                </nav><!--end navbar-->
+                <!-- Navbar End -->
+
+                
+
+        <!-- <center><h2 style="font-weight 300;">Machine Comprehension</h2></center> -->
+        <!-- About Start -->
+        <section class="section bg-light" id="services">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 text-center">
+                            <div class="section-title">
+                                <div class="titles">
+                                    <h5 class="title text-uppercase mb-4 pb-4">Machine Comprehenion</h5>
+                                    <p class="text-muted mx-auto para-desc mb-0">
+                                        Share a story with a neural network and ask it questions. See if it gets the answer right. <br><br>
+                                        <a href="https://www.linkedin.com/in/dkedar7" target="_blank">Get in touch</a> or follow me on 
+                                        <a href="https://www.twitter.com/dkedar7" target="_blank">Twitter</a> to learn more about machine comprehension 
+                                        or to learn about the implemention. 
+
+                                    </p>            
+                                    <br>
+                                    <select name="travel_arriveVia" id="travel_arriveVia" onchange="showfield1(this.options[this.selectedIndex].value)">
+                                            <option value="Other">Autofill</option>
+                                            <option value="revel">Revel's Pitch</option>
+                                    </select>
+                                    <br><br>
+            <form class="md-form">
+                <textarea name="context" id="textarea1" rows="8" class="form-control border rounded" 
+                placeholder="Share the context here."></textarea>
+
+                <br>
+                <p class="text-muted mx-auto para-desc mb-0">
+                        Type a question or select one from the dropdown
+                </p>
+                <br>
+                <select name="question_options" id="travel_arriveVia" onchange="showfield2(this.options[this.selectedIndex].value)">
+                        <option value="Other">Autofill</option>
+                        <option value="revel_what">What does Revel do?</option>
+                </select>
+                <br>
+                <br> 
+                <textarea name="query" id="textarea2" rows="2" class="form-control border rounded"
+                placeholder="Ask your question."></textarea>
+                <br>
+                <div>
+                        <button class="btn btn-custom rounded mouse-down" type="submit">Generate</button>
+                </div>
+                <br>
+                <textarea name="text_output" id="textarea3" rows="2" class="form-control border rounded"
+                placeholder="The answer to your query ..." readonly></textarea>
+                <br>
+                
+            </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <h5><center>About</center></h5>
+        <p class="text-muted mx-auto para-desc mb-0">
+            <center>
+            Researchers from the University of Washington and <a href="https://allenai.org/" target="_blank">
+            Allen Institute of Artificial Intelligence</a> published a neural network model called <a href="https://arxiv.org/abs/1611.01603"
+            target="_blank">BiDAF, or Bi-Directional Attention Flow</a>. This model stood at the top the  the Stanford Question and Answering Dataset (SQuAD) 
+            leaderboard for several weeks. Although many newer models beat it eventually, BiDAF was instrumental in laying down the work for 
+            some other pathbreaking models like BERT and ELMo.
+            <br><br>
+            This app uses the pretrained weights of the model as found <a href="https://github.com/onnx/models" target="_blank">here</a>
+            in the ONNX format. A simpler implementation can also be found in this <a href="https://github.com/dkedar7/EasyAccess/blob/master/Natural%20Language%20Processing/Machine%20Comprehension/machine_comprehension_with_BIDAF.ipynb"
+            target="_blank">notebook</a>.
+            <br><br>
+            Built by <a href="https://www.linkedin.com/in/dkedar7" target="_blank">Kedar Dabhadkar</a> 
+            (<a href="https://www.twitter.com/dkedar7" target="_blank">@dkedar7</a>). Source code can be found here.
+        </center>
+                    
+        </p>
+        </section>
+       
+
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        function showfield1(name){
+            var revelPitch = "Revel is a full-service digital consultancy that partners\
+                                with organizations to lead go-to-market transformation by\
+                                building seamless, simple, connected experiences.\
+                                \
+                                We are problem solvers, designers and builders\
+                                united around a core set of values and a commitment\
+                                to solving complex challenges swiftly, efficiently and elegantly."
+
+          if(name=="revel")document.getElementById('textarea1').innerHTML=revelPitch;
+          else document.getElementById('div1').innerHTML='';
+        }
+    </script>
+    <script type="text/javascript">
+        function showfield2(name){
+          if(name=="revel_what")document.getElementById('textarea2').innerHTML="What does Revel do?";
+          else document.getElementById('div1').innerHTML='';
+        }
+        </script>
+
+    <script>
+        $("form").submit(function(event){
+            event.preventDefault();
+            $.post(window.location.href, $("form").serialize(), function (data) {
+                console.log('Result Found!')
+                $('textarea#textarea3').val(data)
+            })
+        })
+    </script>
+</body>
+</div>
+</html>
