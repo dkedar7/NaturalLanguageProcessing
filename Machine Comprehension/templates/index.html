@@ -24,10 +24,8 @@
         
         <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
         <!-- Magnific -->
-        {{ url_for('static', filename='css/magnific-popup.css') }}
         <link href="{{ url_for('static', filename='css/magnific-popup.css') }}" rel="stylesheet" type="text/css" />
         <!-- Icon -->
-        {{ url_for('static', filename='css/materialdesignicons.min.css') }}
         <link href="{{ url_for('static', filename='css/materialdesignicons.min.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ url_for('static', filename='css/pe-icon-7-stroke.css') }}" rel="stylesheet" type="text/css" />          
         <!-- SLICK SLIDER -->
@@ -37,6 +35,8 @@
         <!-- Custom Css -->
         <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ url_for('static', filename='css/colors/default.css') }}" rel="stylesheet" id="color-opt">
+        <!-- Custom JS -->
+
 
     </head>
 </head>
@@ -44,8 +44,8 @@
 
 <div style="max-width: 600px; margin-left: auto; margin-right: auto;">
 <body>
-    <!-- Loader Start -->
-    <!-- <div id="preloader">
+        <!-- Loader Start -->
+        <!-- <div id="preloader">
             <div id="status">
                 <div class="spinner">
                     <div class="dot1"></div>
@@ -57,23 +57,57 @@
 
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="mdi mdi-menu"></span>
-                    </button><!--end button-->
-    
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <ul class="navbar-nav mx-auto mt-sm-0 social-icon light-social-icon">
-                                <li class="list-inline-item"><a href="https://www.linkedin.com/in/dkedar7" target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
-                                <li class="list-inline-item"><a href="https://www.twitter.com/dkedar7" target="_blank"><i class="mdi mdi-twitter"></i></a></li>
-                                <li class="list-inline-item"><a href="https://medium.com/@kedardabhadkar" target="_blank"><i class="mdi mdi-medium"></i></a></li>
-                            </ul>
-                        </div> 
-                    </div><!--end container-->
-                </nav><!--end navbar-->
-                <!-- Navbar End -->
+    		<div style="background-color:rgba(51, 51, 56, 0.5)" class="container">
+			    <a class="navbar-brand" href="#">
+                    <!-- <img src="images/logoKD2.png" class="l-dark" height="15" alt=""> -->
+                   <img src="images/Picture1.png" class="l-light" height="36" alt=""> 
+                    <!-- <a href="#home"><font color="white"> KEDAR</font></a> -->
+                </a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="mdi mdi-menu"></span>
+			    </button><!--end button-->
 
-                
+			    <div class="collapse navbar-collapse" id="navbarCollapse">
+			        <ul class="navbar-nav mx-auto">
+			            <li class="nav-item active">
+			                <a class="nav-link" href="#home">Home</a>
+                        </li><!--end nav item-->
+                        <li class="nav-item">
+                                <a class="nav-link" href="#resume">Resume</a>
+                            </li><!--end nav item-->
+                        <!-- <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>end nav item -->
+                        <li class="nav-item">
+			                <a class="nav-link" href="#drumming">Drumming</a>
+                        </li><!--end nav item-->
+                        <li class="nav-item">
+                                <a class="nav-link" href="#blog">Blog</a>
+                            </li><!--end nav item-->
+			           
+			            <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li><!--end nav item-->
+                        
+                    </ul>
+
+                    <ul class="list-unstyled mb-0 mt-2 mt-sm-0 social-icon light-social-icon">
+                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/dkedar7"
+                            target="_blank"><i class="mdi mdi-linkedin"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.twitter.com/dkedar7" 
+                            target="_blank"><i class="mdi mdi-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://medium.com/@kedardabhadkar" 
+                            target="_blank"><i class="mdi mdi-medium"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.github.com/dkedar7" 
+                            target="_blank"><i class="mdi mdi-github-circle"></i></a></li>
+                        <li class="list-inline-item"><a href="https://www.instagram.com/kedardabhadkar/" 
+                            target="_blank"><i class="mdi mdi-instagram"></i></a></li>
+                    </ul>
+                </div> 
+		    </div><!--end container-->
+		</nav><!--end navbar-->
+        <!-- Navbar End -->
+
 
         <!-- <center><h2 style="font-weight 300;">Machine Comprehension</h2></center> -->
         <!-- About Start -->
@@ -156,36 +190,10 @@
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
-    <script type="text/javascript">
-        function showfield1(name){
-            var revelPitch = "Revel is a full-service digital consultancy that partners\
-                                with organizations to lead go-to-market transformation by\
-                                building seamless, simple, connected experiences.\
-                                \
-                                We are problem solvers, designers and builders\
-                                united around a core set of values and a commitment\
-                                to solving complex challenges swiftly, efficiently and elegantly."
+    <script type="text/javascript" src="{{ url_for('static', filename='js/myscript.js') }}" >    </script>
+    <!-- <script type="text/javascript">      </script>
 
-          if(name=="revel")document.getElementById('textarea1').innerHTML=revelPitch;
-          else document.getElementById('div1').innerHTML='';
-        }
-    </script>
-    <script type="text/javascript">
-        function showfield2(name){
-          if(name=="revel_what")document.getElementById('textarea2').innerHTML="What does Revel do?";
-          else document.getElementById('div1').innerHTML='';
-        }
-        </script>
-
-    <script>
-        $("form").submit(function(event){
-            event.preventDefault();
-            $.post(window.location.href, $("form").serialize(), function (data) {
-                console.log('Result Found!')
-                $('textarea#textarea3').val(data)
-            })
-        })
-    </script>
+    <script type="text/javascript">   </script> -->
 </body>
 </div>
 </html>
