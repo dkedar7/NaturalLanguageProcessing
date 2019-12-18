@@ -20,7 +20,7 @@
         <!-- Custom JS -->
         <script type="text/javascript" src="../static/js/showfield1.js"></script>
         <script type="text/javascript" src="../static/js/showfield2.js"></script>
-        <link rel="shortcut icon" href="images/logosmall.ico">
+        <link rel="shortcut icon" href="{{ url_for('static', filename='images/logosmall.ico') }}">
         <!-- For Flask -->
         <!-- "{{ url_for('static', filename='stylesheets/style.css') }}" -->
         <!-- Bootstrap -->
@@ -40,11 +40,12 @@
         <link href="{{ url_for('static', filename='css/colors/default.css') }}" rel="stylesheet" id="color-opt">
         <!-- Custom JS -->
 
-        <!-- <script type="text/javascript" src="../static/js/showfield1.js"></script>
-        <script type="text/javascript" src="../static/js/showfield2.js"></script> -->
+        <script type="text/javascript" src="{{ url_for('static', filename='js/showfield1.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/showfield2.js') }}"></script>
     </head>
 
 <body>
+    
         <!-- Loader Start -->
         
         <!-- Loader End -->
@@ -52,9 +53,9 @@
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
     		<div class="container">
-			    <a class="navbar-brand" href="https://dkedar.com/">
-                    <img src="images/logodark.png" class="l-dark" height="38" alt="">
-                   <img src="images/logolight.png" class="l-light" height="38" alt="">
+                <a class="navbar-brand" href="https://dkedar.com/">
+                    <img src="{{ url_for('static', filename='images/logodark.png') }}" class="l-dark" height="38" alt="">
+                   <img src="{{ url_for('static', filename='images/logolight.png') }}" class="l-light" height="38" alt="">
                 </a>
 			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 			        <span class="mdi mdi-menu"></span>
@@ -145,6 +146,10 @@
                         <option value="revelQ1">What is Revel?</option>
                         <option value="revelQ2">What does Revel do?</option>
                         <option value="revelQ3">How does Revel solve challenges?</option>
+                        <option value="dopplerQ1">What is the Doppler effect?</option>
+                        <option value="dopplerQ2">What is a common example of the Doppler shift?</option>
+                        <option value="dopplerQ3">What causes the Doppler effect?</option>
+                        <option value="dopplerQ4">What causes an increase in frequency?</option>
                 </select>
                 <br>
                 <br> 
@@ -268,7 +273,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <a href="#"><img src="images/logolight.png" height="36" alt=""></a>
+                <a href="#"><img src="{{ url_for('static', filename='images/logolight.png') }}" height="36" alt=""></a>
                 <p class="para-desc mx-auto mt-4"><font color="white">Integrating data sources, extracting insights, and automating decisions.</font></p>
                 <ul class="list-unstyled mb-0 mt-4 social-icon">
                     <li class="list-inline-item"><a href="https://www.linkedin.com/in/dkedar7"
