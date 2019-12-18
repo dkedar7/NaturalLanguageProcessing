@@ -6,5 +6,5 @@ A common example of Doppler shift is the change of pitch heard when a vehicle so
 \
 The reason for the Doppler effect is that when the source of the waves is moving towards the observer, each successive wave crest is emitted from a position closer to the observer than the crest of the previous wave.[2][3] Therefore, each wave takes slightly less time to reach the observer than the previous wave. Hence, the time between the arrivals of successive wave crests at the observer is reduced, causing an increase in the frequency. While they are traveling, the distance between successive wave fronts is reduced, so the waves "bunch together". Conversely, if the source of waves is moving away from the observer, each wave is emitted from a position farther from the observer than the previous wave, so the arrival time between successive waves is increased, reducing the frequency. The distance between successive wave fronts is then increased, so the waves "spread out".';
 
-else document.getElementById('div1').innerHTML='';
+else document.getElementById('textarea1').innerHTML='_';
 }
