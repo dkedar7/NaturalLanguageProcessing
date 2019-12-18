@@ -14,6 +14,7 @@ This app uses the pretrained weights of the model as found here in the ONNX form
 Python 3.7 code takes context and text inputs and returns answer using the pretrained ONNX model. I made a REST API and web app using Flask that listens for POST requests on the localhost:8080 port.
 
 <img src="https://github.com/dkedar7/NaturalLanguageProcessing/blob/master/Machine%20Comprehension/architecture.png" alt="Cloud Run Architecture">
+<a href="https://cloud.google.com/run/docs/" target="_blank">Source</a>
 
 ### Installing and running the app
 
