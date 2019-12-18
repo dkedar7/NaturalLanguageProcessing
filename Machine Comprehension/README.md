@@ -22,6 +22,7 @@ Python 3.7 code takes context and text inputs and returns answer using the pretr
 git clone https://github.com/dkedar7/NaturalLanguageProcessing
 cd Machine\ Comprehension/
 python3 -m venv bidaf
+source bidaf/bin/activate
 pip3 install -r requirements.txt
 python3 main.py
 ```
