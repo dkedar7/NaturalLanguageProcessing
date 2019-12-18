@@ -18,7 +18,7 @@ Python 3.7 code takes context and text inputs and returns answer using the pretr
 
 ### Installing and running the app
 
-```python
+```bash
 git clone https://github.com/dkedar7/NaturalLanguageProcessing
 cd Machine\ Comprehension/
 python3 -m venv bidaf
