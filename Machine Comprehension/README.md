@@ -1,6 +1,6 @@
 # Machine Comprehension
 
-Also called Quetion Answering, Machine Comprehension is a model that takes the context and question as the inputs and outputs the answer. This repository supports the code for the app https://dkedar.com/apps/machinecomprehension
+Also called Question Answering, Machine Comprehension is a model that takes the context and question as the inputs and outputs the answer. This repository supports the code for the app https://dkedar.com/apps/machinecomprehension
 In the current implementation, I used a pretrained BiDAF, available for download on https://github.com/onnx/models. 
 I utilized Google Build to containerize my application, Google Container Registry for storing and managing my container and Google Cloud Run to deploy it as a web endpoint.
 
